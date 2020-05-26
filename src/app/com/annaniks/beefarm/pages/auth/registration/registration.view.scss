@@ -1,0 +1,95 @@
+.registration-form-content {
+  .registration-form-header {
+    background: #f2f3f5;
+    padding: 40px 0;
+
+    .registration-form-header-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 500px;
+
+    
+        .text {
+          color: #17344f;
+          font-size: 30px;
+        font-weight: 400;
+        padding: 0 20px;
+
+      }
+
+    }
+  }
+
+  .error-message {
+    margin-bottom: 20px;
+  }
+
+  .registration-form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 20px;
+    max-width: 500px;
+
+    .form-group {
+      width: 100%;
+
+      .input {
+        width: calc(100% - 100px);
+      }
+
+      .label-wrapper {
+        width: 100px;
+
+        .label {
+          color: #17344f;
+          font-size: 21px;
+        }
+      }
+    }
+
+    .save-btn {
+      margin-left: 100px;
+    }
+  }
+}
+
+.title {
+  margin: 10px 100px 0;
+  color: #17344f;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.title-danger {
+  cursor: pointer;
+  color: #f1412e;
+  text-decoration: underline;
+}
+
+.phone-form {
+  width: calc(100% - 60px) !important;
+  margin-left: 60px !important;
+  border: none !important;
+}
+
+::ng-deep {
+  .iti--allow-dropdown {
+    width: 100% !important;
+    // border: 1px solid #707070 !important;
+    z-index: 1;
+  }
+
+  .iti--allow-dropdown {
+    border: 1px solid #ced4da !important;
+    border-radius: .25rem !important;
+  }
+
+  .iti__flag-container {
+    width: 50px !important;
+
+  }
+}
+
+.phone-content {
+  width: 80% !important;
+}

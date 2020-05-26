@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "name": "beehives",
+        "unit": "Requrest for the purchase of beehives",
+        "price": 320,
+        "minorder": 1,
+        "stock": 1,
+        "descr": "Requrest for the purchase of beehives",
+        "shop": "by"
+    },
+    {
+        "id": "2",
+        "name": "good 1",
+        "unit": "Requrest for the purchase of beehives",
+        "price": 220,
+        "minorder": 1,
+        "stock": 1,
+        "descr": "Requrest for the purchase of beehives",
+        "shop": "by"
+    },
+    {
+        "id": "3",
+        "name": "good 2",
+        "unit": "Requrest for the purchase of beehives",
+        "price": 460,
+        "minorder": 1,
+        "stock": 1,
+        "descr": "Requrest for the purchase of beehives",
+        "shop": "by"
+    }
+]

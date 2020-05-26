@@ -28,7 +28,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss",
+              "src/assets/styles/base/_global.scss",
+              "src/assets/styles/base/_responsive.scss"
             ],
             "scripts": []
           },
@@ -92,6 +95,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +127,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "beefarm"
+    }
+  },
+  "defaultProject": "beefarm",
+  "cli": {
+    "analytics": "300f7bfc-1247-42ec-8ea3-8ac533875a09"
+  }
 }

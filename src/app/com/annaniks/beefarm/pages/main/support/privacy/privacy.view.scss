@@ -1,0 +1,95 @@
+@mixin text-style($fontSize, $color, $lineHeight) {
+    font-size: $fontSize;
+    color: $color;
+    line-height: $lineHeight;
+    margin-top: 20px;
+    word-break: break-all;
+}
+//general
+.teams-content {
+    .content-text {
+        @include text-style(18px, #17344F, 24px);
+        margin-top: 10px !important;
+        width: 100%;
+        max-width: 500px;
+    }
+    .title {
+        margin-top: 0 !important;
+        @include text-style(50px, #17344F, 50px)
+    }
+    .text {
+        @include text-style(30px, #17344F, 35px)
+    }
+    .data {
+        @include text-style(14px, #17344F, 19px)
+    }
+    .code-text {
+        @include text-style(20px, #17344F, 27px);
+        font-weight: 900;
+    }
+    .mat-td {
+        @include text-style(14px, #17344F, 19px);
+        padding: 11px 0;
+        border: none;
+        word-break: break-all;
+    }
+    .mat-th {
+        @include text-style(20px, #17344F, 27px);
+        font-weight: bold;
+        border: none !important;
+        padding: 11px 0;
+    }
+    //teams-main
+    .teams-main-content {
+        .teams-text {
+            margin-top: 50px !important;
+        }
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            border: 1px solid #B4B4B4;
+            opacity: 1;
+            margin-top: 25px;
+        }
+    }
+//trams-table
+    .trams-table {
+        margin: 90px 0 80px 0;
+    }
+    .paragraf-content {
+        .content-text {
+            max-width: 800px !important;
+        }
+    }
+//quote-content
+    .quote-content {
+        margin: 40px 0 70px 0;
+        &::before {
+            display: block;
+            content: "";
+            border: 5px solid #FFCF00;
+            opacity: 1;
+        }
+        .quote-main-content {
+            margin-left: 50px;
+        }
+    }
+    //table-page
+    .table-page {
+        .table {
+            margin-top: 40px;
+            .mat-th {
+                @include text-style(14px, #17344F, 19px);
+                border-bottom: 1px solid #dee2e6 !important;
+            }
+            .secend-item {
+                background: #E6E9EC !important;
+                padding: 11px 11px;
+            }
+        }
+    }
+}
+.three-item,.tree-th{
+    padding: 11px 10px !important;
+}

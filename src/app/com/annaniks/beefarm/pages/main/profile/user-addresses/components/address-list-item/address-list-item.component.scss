@@ -1,0 +1,56 @@
+.address-list-item {
+  margin-bottom: 20px;
+  .label {
+    color: #17344f;
+    font-size: 14px;
+  }
+  .address-list-item-content {
+    margin-top: 11px;
+    .address-list-item-details {
+      width: 100%;
+      .text {
+        word-break: break-all;
+        color: #17344f;
+        font-size: 18px;
+        line-height: 24px;
+        margin:5px 0;
+      }
+    }
+  }
+  .edit-btn {
+    margin-left:85px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #8695a5;
+    border-radius: 5px;
+    opacity: 1;
+    color: #17344f;
+    padding: 11px 31px;
+    font-size: 14px;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border: 1px solid #b4b4b4;
+    opacity: 1;
+    margin-top: 25px;
+  }
+}
+
+::ng-deep {
+  .mat-checkbox-inner-container {
+    height: 25px !important;
+    width: 25px !important;
+    border-radius: .25rem !important;
+    margin-left: 10px !important;
+  }
+
+  .mat-checkbox-checked.mat-accent .mat-checkbox-background,
+  .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: #f1412e !important;
+  }
+
+  .mat-checkbox .mat-checkbox-frame {
+    border-color: #ced4da !important;
+  }
+}

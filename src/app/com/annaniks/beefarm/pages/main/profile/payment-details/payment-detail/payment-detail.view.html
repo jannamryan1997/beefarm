@@ -1,0 +1,50 @@
+<div class="payment-detail-form-group ">
+    <p class="text">{{title}}</p>
+    <p class="tex-center error text-danger error-message">{{errorMessage}}</p>
+    <form [formGroup]="paymentForm">
+        <div class="form-group">
+            <div class="form-group-item">
+                <mat-form-field>
+                    <mat-label class="label"> Type</mat-label>
+                    <mat-select formControlName="type"    (ngModelChange)="onCountryChange($event)">
+                        <mat-option *ngFor="let item of typeOption" [value]="item.value">{{item?.name}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+
+            </div>
+            <div class="form-group-item d-flex align-items-center">
+                <div class="label-wrapper">
+                    <label class="label">Receive</label>
+                </div>
+                <mat-checkbox formControlName="reqv"></mat-checkbox>
+            </div>
+            <div class="form-group-item d-flex align-items-center">
+                <div class="label-wrapper">
+                    <label class="label">Pay</label>
+                </div>
+                <mat-checkbox formControlName="pay"></mat-checkbox>
+
+            </div>
+
+            <div class="form-group-item d-flex flex-column mt-3">
+                    <div class="label-wrapper">
+                    <label for="name" class="label">Details</label>
+                </div>
+                    <div class="input-content">
+                        <textarea type="text" class="form-control input text-area mt-2" id="name" formControlName="details"></textarea>
+                    </div>
+                </div>
+
+
+
+
+        </div>
+        <div class="d-flex">
+        <button class="btn save-btn cursor-pointer d-flex align-items-center" type="submit"
+            [disabled]="paymentForm.invalid" (click)="onClick()">Save <app-loading class="ml-3" *ngIf="loading"></app-loading></button>
+        <button class="btn save-btn cursor-pointer ml-5" type="submit" *ngIf="isEdit"
+            (click)="onClickDelete()">Delete</button>
+        </div>
+    </form>
+</div>

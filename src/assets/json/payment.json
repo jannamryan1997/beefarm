@@ -1,0 +1,67 @@
+[
+    {
+        "id": "1",
+        "purchase_date": "12:20:2020",
+        "action": "buy",
+        "goods": 1,
+        "quantity": 1212,
+        "amount": 2000,
+        "paid": null,
+        "done": null,
+        "cancel": "cancel",
+        "accepted": null,
+        "descr": "descr"
+    },
+    {
+        "id": "2",
+        "purchase_date": "12:20:2010",
+        "action": "buy",
+        "goods": 1,
+        "quantity": 1212,
+        "amount": 420,
+        "paid": "paid",
+        "done": null,
+        "cancel": "cancel",
+        "accepted": null,
+        "descr": "descr"
+    },
+    {
+        "id": "3",
+        "purchase_date": "12:20:2010",
+        "action": "buy",
+        "goods": 1,
+        "quantity": 1212,
+        "amount": 420,
+        "paid": "paid",
+        "done": "done",
+        "cancel": null,
+        "accepted": null,
+        "descr": "descr"
+    },
+    {
+        "id": "4",
+        "purchase_date": "12:20:2010",
+        "action": "buy",
+        "goods": 1,
+        "quantity": 1212,
+        "amount": 480,
+        "paid": null,
+        "done": "done",
+        "cancel": null,
+        "accepted": null,
+        "descr": "descr"
+    },
+    {
+        "id": "45",
+        "purchase_date": "12:20:2010",
+        "action": "buy",
+        "goods": 1,
+        "quantity": 1212,
+        "amount": 480,
+        "paid": null,
+        "done": null,
+        "cancel": null,
+        "accepted": "accepted",
+        "descr": "descr"
+    }
+]

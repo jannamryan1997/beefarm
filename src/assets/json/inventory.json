@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "parent": "parent",
+        "quantity": 1212,
+        "egg": "beehives",
+        "name": "beehives",
+        "unit": "buy",
+        "price": 480,
+        "descr": "buy beehives",
+        "goods": 1,
+        "purchase_date": "12:12:2020"
+    },
+    {
+        "id": 2,
+        "parent": "parent",
+        "quantity": 1212,
+        "egg": "beehives",
+        "name": "beehives",
+        "unit": "buy",
+        "price": 480,
+        "descr": "buy beehives",
+        "goods": 1,
+        "purchase_date": "12:12:2020"
+    }
+]

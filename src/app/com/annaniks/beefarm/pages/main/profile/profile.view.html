@@ -1,0 +1,43 @@
+<div class="profile-content">
+    <div class="profile-header">
+        <div class="header-wrapper pg-container">
+            <div class="rout-step d-flex align-items-center">
+                <a class="route-step-item cursor-pointer" *ngFor="let item of routeSteps"
+                    [routerLink]="item?.routerLink">{{item?.label}}</a>
+            </div>
+            <p class="text">{{title}}</p>
+        </div>
+    </div>
+    <div class="beehives-content position-relative"  [ngClass]="{'d-block':url=='/profile/inventory'}">
+        <div class="beehives-header d-flex align-items-center">
+            <div class=" d-flex m-auto">
+                <p class="text">Buy beehives</p>
+                <div class="behives-radius  ml-3 d-flex" (click)="onclick()">
+                    <i class="material-icons m-auto" [ngClass]="(beehives) ? 'inner-open' : 'inner-0close'">
+                        keyboard_arrow_down
+                    </i>
+                </div>
+            </div>
+        </div>
+    <div  *ngIf="beehives">
+            <div class="beehives-main position-absolute w-100">
+            <beehives-app *ngFor="let item of goodData" [item]="item" ></beehives-app>
+            </div>
+    </div>
+    </div>
+    <div class="profile-main d-flex f-direction-colum-w-900">
+        <div class="main-container d-flex f-direction-colum-w-900 pg-container">
+            <div class="menu-content">
+                <p class="title" routerLink="/profile/user-account" [routerLinkActive]="'activeMenuTab'">Profile</p>
+                <p class="title" routerLink="/profile/user-addresses" [routerLinkActive]="'activeMenuTab'">Addresses</p>
+                <p class="title" routerLink="/profile/payment-details" [routerLinkActive]="'activeMenuTab'">Payment
+                    details</p>
+                <p class="title" routerLink="/profile/inventory" [routerLinkActive]="'activeMenuTab'">Inventory</p>
+                <p class="title" routerLink="/profile/payments" [routerLinkActive]="'activeMenuTab'">Payments</p>
+            </div>
+            <div class="router-content">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

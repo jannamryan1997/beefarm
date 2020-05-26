@@ -1,0 +1,56 @@
+<div class="payment-item"
+    [ngClass]="{'backgroud-buy':paymentData.action=='buy','backgroud-sell':paymentData.action=='sell'}">
+    <div class="payment-item-description ">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="payment-done d-flex" [ngClass]="{'border':section=='cancel'}">
+                <i class="material-icons  m-auto" [ngClass]="{'color-red':section=='cancel'}">
+                    keyboard_arrow_down
+                </i>
+            </div>
+            <p class="done-text ml-2"
+                [ngClass]="{'color-red':section=='cancel','col-green':section=='wait'|| section=='paid' || section=='accepted'}">
+                {{section}}</p>
+                <div class="d-flex m-auto">
+                    <p class="title m-auto">{{goodDataName}} </p>
+                    <p  class="title">{{paymentData?.quantity}}</p>
+                </div>
+          
+            <p class="title d-none" [ngClass]="{'d-block':paymentData.action=='buy'}">$ -{{paymentData?.amount}}</p>
+            <p class="title d-none" [ngClass]="{'d-block':paymentData.action=='sell'}">$ +{{paymentData?.amount}}</p>
+        </div>
+        <div class="payment-info">
+            <div class="payment-info-description d-flex justify-content-between">
+                <p class="title">Payment info</p>
+                <div class="payment-info-done d-flex">
+                    <i class="material-icons  m-auto" *ngIf="!hive" (click)="onclick()">
+                        keyboard_arrow_down
+                    </i>
+                    <i class="material-icons m-auto" *ngIf="hive" (click)="onclick()">
+                        keyboard_arrow_up
+                    </i>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="asset-list" *ngIf="hive">
+            <p class="title">{{paymentData?.descr}}</p>
+            <table class="table">
+                <tr class="mat-tr">
+                    <td class="mat-td w-50"> quantity</td>
+                    <td class="mat-td w-50 right-td"> {{paymentData?. quantity}} pcs</td>
+                </tr>
+                <tr class="mat-tr">
+                    <td class="mat-td w-50">Date of purchase</td>
+                    <td class="mat-td w-50 right-td">{{paymentData?.purchase_date}}</td>
+                </tr>
+                <tr class="mat-tr">
+                    <td class="mat-td w-50">Total price</td>
+                    <td class="mat-td w-50 right-td">$ {{paymentData?.amount}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <button class="btn  cursor-pointer save-btn" type="submit" [ngClass]="{'d-block':paymentData.paid==null && paymentData.accepted}" (click)="redirecToShopPage()" ><a>Pay</a></button>
+</div>

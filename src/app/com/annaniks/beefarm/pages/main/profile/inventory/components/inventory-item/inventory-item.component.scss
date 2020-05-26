@@ -1,0 +1,43 @@
+.asset-list-item {
+  width: 100%;
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border: 1px solid #b4b4b4;
+    opacity: 1;
+    margin: 38px auto;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 24px;
+    color: #17344f;
+  }
+  .assets-table {
+    margin-top: 40px;
+    .table {
+      .mat-td {
+        padding: 11px 0;
+        border: none;
+        word-break: break-all;
+        color: #17344f;
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 600;
+      }
+    }
+    .buttons-content {
+      .out-btn {
+        border-radius: 5px;
+        opacity: 1;
+        font-size: 14px;
+        margin-top: 30px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #f1412e;
+        color: #f1412e;
+        padding: 10px 24px;
+        font-weight: bold;
+      }
+    }
+  }
+}

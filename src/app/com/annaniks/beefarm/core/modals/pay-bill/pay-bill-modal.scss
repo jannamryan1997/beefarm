@@ -1,0 +1,46 @@
+.pay-bill-content {
+    .header-content {
+        .icon {
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+        }
+    }
+    .pay-bill-main-content {
+        max-width: 60%;
+        margin: 55px auto;
+        width: 100%;
+
+        .main-description {
+            .main-text {
+                word-break: break-all;
+                color: #17344F;
+                font-size: 50px;
+                line-height: 67px;
+                word-break: break-all;
+            }
+
+            .main-icon {
+                height: 110px;
+                margin-left: 20px;
+            }
+        }
+
+        .text {
+            color: #17344F;
+            font-size: 21px;
+            line-height: 27px;
+            word-break: break-all;
+            margin-top: 35px;
+        }
+    }
+}
+
+::ng-deep{
+    .cdk-overlay-pane{
+        padding: 0 20px !important;
+    }
+    .mat-dialog-container{
+        padding: 24px 10px !important
+    }
+}

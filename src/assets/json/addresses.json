@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "billing": true,
+        "main": true,
+        "country": "ARM",
+        "zip": "12-12-12",
+        "address": "Teryan 20"
+    },
+    {
+        "id": 2,
+        "billing": true,
+        "main": false,
+        "country": "ARM",
+        "zip": "1234-1234-1223",
+        "address": "Teryan 20"
+    },
+    {
+        "id": 3,
+        "billing": false,
+        "main": false,
+        "country": "USA",
+        "zip": "12-12-12",
+        "address": "Teryan 20"
+    }
+]

@@ -1,0 +1,44 @@
+<form [formGroup]="registrationForm">
+    <div class="registration-form-content">
+
+        <div class="registration-form-header form-header d-flex">
+            <div class="registration-form-header-container">
+                <p class="text">Registration</p>
+            </div>
+        </div>
+
+        <div id="registration-forms" class="registration-form respons-form-content">
+            <p class="tex-center error text-danger error-message">{{errorMessage}}</p>
+            <p class="tex-center error text-danger error-message d-none"
+                [ngClass]="{'d-block':registrationForm.get('email').hasError('pattern')}">Please provide a valid email
+                address</p>
+            <div class="form-group d-flex align-items-center">
+                <div class="label-wrapper">
+                    <label class="label">E mail</label>
+                </div>
+                <input type="email" id="inputEmail" formControlName="email" class="form-control input"
+                    placeholder="E mail" [ngClass]="{'border':checkIsValid('email')}">
+            </div>
+            <div class="form-group d-flex align-items-center">
+                <div class="label-wrapper">
+                    <label class="label">Name</label>
+                </div>
+                <input type="text" id="name" formControlName="name" class="form-control input" placeholder="Name"
+                    [ngClass]="{'border':checkIsValid('name')}">
+
+            </div>
+            <div class="form-group d-flex align-items-center">
+                <div class="label-wrapper">
+                    <label class="label">Phone number</label>
+                </div>
+                <input type="text" id="phone" formControlName="phone" class="form-control input" placeholder="phone"
+                    [ngClass]="{'border':checkIsValid('phone')}" [OnlyNumber]="true">
+
+            </div>
+            <button class="btn save-btn cursor-pointer d-flex align-items-center" type="submit"
+                [disabled]="registrationForm.invalid" (click)="onclickRegistration()">Save <app-loading class="ml-3"
+                    *ngIf="loading"></app-loading></button>
+            <p class="title form-title">I have an account.<b class="title-danger" routerLink="/auth/login">Login</b></p>
+        </div>
+    </div>
+</form>

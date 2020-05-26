@@ -1,0 +1,64 @@
+.footer-content {
+  background: #f7f7f7 0% 0% no-repeat padding-box;
+  border: 1px solid #d5d5d5;
+  opacity: 1;
+  .footer-container {
+    padding:0 20px;
+    .text,
+    .title {
+      color: hsl(209, 55%, 20%);
+      font-size: 17px;
+      line-height: 27px;
+    }
+    .title {
+      font-weight: 600;
+    }
+    .footer-top-content {
+      // &::after {
+      //   content: "";
+      //   display: flex;
+      //   width: 100%;
+      //   border: 1px solid #b4b4b4;
+      //   opacity: 1;
+      // }
+      &-wrapper {
+        padding: 65px 0;
+      }
+      .form-content {
+    
+        .form-input {
+          background: #ffffff 0% 0% no-repeat padding-box;
+          border: 1px solid #bebebe;
+          opacity: 1;
+          width: 400px;
+        }
+        .sign-btn {
+          padding: 15px 75px;
+          opacity: 1;
+          color: white;
+          background-color: #17344f;
+        }
+      }
+    }
+    .footer-min-content {
+      padding: 40px 0;
+      .card-item {
+        .item {
+          width: 60px;
+          height: 35px;
+        }
+      }
+    }
+  }
+}
+.link{
+  font-weight: 600;
+  padding-right: 10px;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: #17344f;
+}
+a{
+  text-decoration: none;
+  color: #17344f;
+}

@@ -1,0 +1,32 @@
+<div class="asset-list-item">
+    <p class="title">{{orderData?.name}}</p>
+    <div class="assets-table">
+        <table class="table">
+            <tr class="mat-tr">
+                <td class="mat-td w-50"> quantity</td>
+                <td class="mat-td w-50">{{orderData?.quantity}}pcs</td>
+            </tr>
+            <tr class="mat-tr">
+                <td class="mat-td w-50">Date of purchase</td>
+                <td class="mat-td w-50">{{orderData?.purchase_date | date}} </td>
+            </tr>
+            <!-- <tr class="mat-tr">
+                <td class="mat-td w-50">Price for one</td>
+                <td class="mat-td w-50">$ 300</td>
+            </tr> -->
+            <tr class="mat-tr">
+                <td class="mat-td w-50">Total price</td>
+                <td class="mat-td w-50">$ {{orderData?.price}}</td>
+            </tr>
+        </table>
+        <div class="buttons-content d-flex">
+            <div class="w-50">
+                <a class="btn  cursor-pointer add-btn" type="submit" [href]="'https://honey.bestmx.net/doc/contract.pdf'" target="_blank">Download contract</a>
+            </div>
+            <div class="w-50">
+                <button class="btn  cursor-pointer out-btn" type="submit" (click)="sellOrder(orderData?.goods,orderData?.quantity)">Sell out</button>
+            </div>
+        </div>
+    </div>
+</div>
+

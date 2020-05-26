@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "recv": true,
+        "pay": true,
+        "details": "details",
+        "type": "paypal"
+    },
+    {
+        "id": "2",
+        "recv": false,
+        "pay": true,
+        "details": "details",
+        "type": "bank"
+    },
+    {
+        "id": "3",
+        "recv": true,
+        "pay": false,
+        "details": "details",
+        "type": "check"
+    }
+]
